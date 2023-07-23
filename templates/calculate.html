@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>First Flask Prj</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>Show result</h1>
+            <!-- input for recieving data -->
+            <form action="{{url_for('calculate')}}" method="POST">
+                <input type="text" name="maths" placeholder="Mathmatics" required="required"/>
+                <input type="text" name="science" placeholder="Gen Sc" required="required"/>
+                <input type="text" name="history" placeholder="Hist" required="required"/>
+
+                <button type="submit">Show Result</button>
+            </form>    
+        </div>
+    </body>
+
+</html>
